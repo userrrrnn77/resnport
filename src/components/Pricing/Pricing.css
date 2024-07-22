@@ -1,0 +1,81 @@
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  flex-wrap: wrap; /* Tambahkan ini agar card bisa wrap jika terlalu banyak */
+}
+
+.content{
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.pricing-card {
+  background-color: #222;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: white;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  gap: 8px;
+  margin: 5px; /* Ubah margin menjadi shorthand */
+}
+
+.pricing-card .content {
+  padding: 20px;
+}
+
+.title_pricing {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-btn {
+  padding: 8px 12px;
+  outline: 0;
+  border: 0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  background: indigo;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.pricing-btn:hover {
+  background: rgb(56, 0, 96);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .pricing-card {
+    padding: 15px;
+  }
+
+  .pricing-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-card {
+    padding: 10px;
+  }
+
+  .pricing-btn {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+}

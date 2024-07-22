@@ -1,0 +1,153 @@
+/* Untuk memastikan card dan tombol tidak memiliki outline atau border yang tidak diinginkan */
+.card {
+  background-color: #222;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: none; /* Pastikan tidak ada border */
+  outline: none; /* Pastikan tidak ada outline */
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 30px; /* Perbaiki jarak bawah */
+  color: white;
+}
+
+/* Menambahkan class untuk carousel container */
+.slider-container {
+  width: 85%; /* Lebar 85% dari kontainer induk */
+  margin: 0 auto; /* Memusatkan carousel di dalam kontainer induk */
+}
+
+.card figure {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.btn {
+  padding: 8px 12px;
+  outline: 0; /* Pastikan outline dihapus */
+  border: 0; /* Pastikan border dihapus */
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  background: indigo;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(56, 0, 96);
+}
+
+/* Adjust for carousel */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) { /* For tablets */
+  .card {
+    flex-direction: column; /* Ensure proper stacking */
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card p {
+    margin-bottom: 15px;
+  }
+
+  .card-actions {
+    margin-top: 8px;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .slider-container {
+    width: 85%; /* Ensure carousel is 85% width on tablets */
+  }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+  .slider-container {
+    width: 85%; /* Ensure carousel is 85% width on mobile phones */
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .card-actions {
+    margin-top: 6px;
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+  }
+
+  .btn {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+}

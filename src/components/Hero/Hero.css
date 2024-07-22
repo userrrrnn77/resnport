@@ -1,0 +1,139 @@
+/* Default styles for larger screens */
+.hero {
+  flex: 1;
+  width: auto;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  padding: 20px;
+  color: #969696;
+}
+
+.nav img {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.main_container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.text_image_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Add gap to control spacing between items */
+}
+
+.text_container {
+  flex: 1;
+  padding: 15px; /* Reduced padding */
+}
+
+.grid {
+  margin: 30px 0px; /* Reduced margin */
+  font-size: 56px;
+  color: #c4c7c5;
+  font-weight: 500;
+}
+
+.grid span {
+  background: -webkit-linear-gradient(16deg, #4be7ff, #c8ff46);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.image_container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px; /* Reduced padding */
+}
+
+.image_container img {
+  max-width: 95%;
+  height: auto;
+}
+
+.content {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 16px;
+  color: #c4c7c5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) { /* For tablets */
+  .nav {
+      font-size: 18px;
+      padding: 15px;
+  }
+
+  .nav img {
+      width: 30px;
+  }
+
+  .grid {
+      font-size: 48px;
+  }
+
+  .text_container {
+      padding: 10px;
+  }
+
+  .image_container {
+      padding: 10px;
+  }
+
+  .content {
+      font-size: 14px;
+      padding: 15px;
+  }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+  .nav {
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .nav img {
+      width: 25px;
+  }
+
+  .grid {
+      font-size: 36px;
+  }
+
+  .text_container {
+      padding: 5px;
+  }
+
+  .image_container {
+      padding: 5px;
+  }
+
+  .content {
+      font-size: 12px;
+      padding: 10px;
+  }
+
+  .text_image_container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .image_container img {
+      max-width: 100%;
+  }
+}
